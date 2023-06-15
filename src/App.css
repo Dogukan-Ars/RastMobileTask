@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@400;500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+    /* Colors */
+    --body-color: #FFFFFF;
+    --text-color: #000000;
+    --title-color: #06163A;
+    --bg-color: #EFF2FF;
+    --bg-sec-color: #e8ecff00;
+    --button-bg-color: #744BFC;
+    --giveup-button-bg-color: #F5F7FF;
+    --first-line-color: rgba(255, 255, 255, 0.71);
+    --sec-line-color: rgba(76, 175, 80, 0);
+    --third-line-color: rgba(0, 0, 0, 0.11);
+    --table-border-color: #C4CEE5;
+    --form-border-color: #D9D9D9;
+    --input-color: #8C8C8C;
+    --footer-number-color: #EAEAEA;
+    --footer-swiper-color: #C9C9C9;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    /* Font sizes */
+    --h4: 14px;
+    --h5: 13px;
+    --text-size: 12px;
+    --num-size: 10px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    /* Font Weight */
+    --fw-400: 400;
+    --fw-500: 500;
+    
+    /* Radius */
+    --br-6: 6px;
+    --br-34: 34px;
+    --br-38: 38px;
+    --br-39: 39px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    /* Font Family */
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-inter: 'Inter', sans-serif;
 }

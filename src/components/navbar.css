@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    font-family: var(--ff-poppins);
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/*************** NAVBAR ***************/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    height: 104px;
+    max-width: 1637px;
+}
+
+.navbar {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+/******** Navbar Logo ********/
+
+.nav-logo {
+    margin-left: 104px;
+}
+
+
+/******** Navbar Titles ********/
+.nav-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 21px;
+}
+
+.nav-titles>ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+}
+
+.title {
+    align-self: center;
+    min-width: 80px;
+    margin: 0 40px;
+}
+
+.title-link {
+    text-decoration: none;
+    font-size: var(--h4);
+    color: var(--text-color);
+    font-weight: var(--fw-400);
+}
+
+/******** Navbar Icons ********/
+.nav-icons {
+    height: 21px;
+}
+
+.nav-icons>ul {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 7px;
+    width: 18px;
+}
+
+/******** Navbar Buttons ********/
+.nav-btn {
+    cursor: pointer;
+    font-size: 28px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/*************** Responsive Scale ***************/
+
+@media screen and (max-width: 340px) {
+    .header {
+        margin: auto;
+    }
+
+    header .nav-btn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        right: 10px;
+    }
+
+    .nav-logo img {
+        display: flex;
+        justify-content: start;
+        margin-left: -40px;
+    }
+}
+
+@media screen and (min-width: 341px) {
+    .header {
+       margin: auto;
+    }
+    header .nav-btn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+.header {
+       margin: auto;
+    }
+    .nav-logo img {
+        margin-left: -40px;
+    }
+
+    .nav-btn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        right: -71px;
+    }
+
+    header nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+        transform: translateY(-100vh);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav-btn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        right: -70px;
+    }
+
+    header nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+        transform: translateY(-100vh);
+    }
+    .nav-titles {
+        font-size: var(--text-size);
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+
+    .nav-logo {
+        margin-left: 70px;
+    }
+    
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        font-size: 20px;
+        z-index: 1;
+    }
+
+    .nav-icons ul {
+        justify-content: center;
+    }
+    
+    .nav-titles ul,
+    .nav-icons ul {
+        display: none;
+    }
+
+    .responsive_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive_nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        right: -20px;
+    }
+    .nav-titles {
+        font-size: var(--h5);
+    }
+
+    header nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-rows: repeat(2, 2fr);
+        justify-content: space-around;
+    }
+
+    .nav-icons ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 120px;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, 2);
+        column-gap: 180px;
+    }
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@400;500&display=swap');
+
+.form-container {
+    width: 488px;
+    height: 406px;
+    border-radius: 13px;
+    margin: 51px auto;
+    position: relative;
+}
+
+.close-icon img {
+    width: 24px;
+    position: absolute;
+    right: 17px;
+    top: -19px;
+    cursor: pointer;
+}
+
+.fieldset {
+    width: 424px;
+    margin: 23px auto;
+}
+
+label {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-500);
+    font-size: var(--h5);
+    color: var(--title-color);
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 424px;
+    height: 40px;
+    border-radius: var(--br-38);
+    border: 1px solid var(--table-border-color);
+    padding-left: 15px;
+    font-family: var(--ff-inter);
+    font-weight: var(--fw-400);
+    font-size: var(--text-size);
+}
+
+.buttons {
+    width: 182.76px;
+    margin-top: 21.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 32px;
+}
+
+
+/* Vazgeç Button */
+.giveup-btn {
+    font-family: var(--ff-poppins);
+    font-size: 13.42px;
+    width: 82.76px;
+    height: 37px;
+    border-radius: var(--br-34);
+    color: var(--button-bg-color);
+    background-color: var(--giveup-button-bg-color);
+    border: none;
+}
+.giveup-btn:hover {
+    box-shadow: 0 5px 15px rgba(219, 191, 239, 0.664);
+}
+
+.newAccount-btn {
+    font-family: var(--ff-poppins);
+    font-size: 13.42px;
+    width: 82.76px;
+    height: 37px;
+    border-radius: var(--br-34);
+    color: var(--body-color);
+    background-color: var(--button-bg-color);
+    border: none;
+}
+.newAccount-btn:hover {
+    box-shadow: 0 5px 15px rgba(161, 54, 238, 0.4);
+}
+
+@media screen and (max-width: 340px) {
+    .form-container {
+        width: 370px;
+    }
+
+    .close-icon img {
+        width: 20px;
+        position: absolute;
+        right: 30px;
+        top: -25px;
+    }
+    
+    .fieldset {
+        width: 320px;
+    }
+    
+    label {
+        font-size: var(--h4);
+    }
+
+    .form-input {
+        width: 320px;
+        font-size: var(--h5);
+    }
+}
+
+@media screen and (min-width: 341px) {
+    .close-icon img {
+        width: 24px;
+        position: absolute;
+        right: 40px;
+        top: -25px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .close-icon img {
+        width: 24px;
+        position: absolute;
+        right: 40px;
+        top: -25px;
+    }
+}
+/* 
+@media screen and (min-width: 767px) {
+    
+}
+@media screen and (min-width: 1023px) {
+    
+}
+@media screen and (min-width: 1048px) {
+    
+}
+@media screen and (min-width: 1200px) {
+    
+} */
